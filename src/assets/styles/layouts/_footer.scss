@@ -1,0 +1,42 @@
+.uoc-footer {
+  background: #fff;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  color: #222;
+  border-top: 1px solid #eee;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer-center {
+  display: flex;
+  gap: 1.5em;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}

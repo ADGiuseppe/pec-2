@@ -55,3 +55,42 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+
+@supports (display: grid) {
+  .landing-page {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+  }
+
+  .landing-content {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+  }
+}
+
+@supports not (display: grid) {
+  .landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-content {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.landing-image,
+.landing-title,
+.landing-description {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
