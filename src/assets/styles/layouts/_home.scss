@@ -26,7 +26,7 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
+.uoc-container__logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@ body {
   }
 }
 
-.uoc-title {
+.uoc-container__title {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
@@ -50,11 +50,14 @@ body {
   }
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
+footer {
   font-size: 0.75rem;
   text-align: center;
-}html, body {
+  flex-shrink: 0;
+}
+
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -70,10 +73,6 @@ main {
   flex: 1 0 auto;
 }
 
-.uoc-footer {
-  flex-shrink: 0;
-}
-
 @supports (display: grid) {
   .landing-page {
     display: grid;
@@ -81,7 +80,7 @@ main {
     min-height: 80vh;
   }
 
-  .landing-content {
+  .landing-page__content {
     display: grid;
     gap: 2rem;
     justify-items: center;
@@ -98,16 +97,16 @@ main {
     text-align: center;
   }
 
-  .landing-content {
+  .landing-page__content {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
 
-.landing-image,
-.landing-title,
-.landing-description {
+.landing-page__image,
+.landing-page__title,
+.landing-page__description {
   display: block;
   width: 100%;
   text-align: center;
