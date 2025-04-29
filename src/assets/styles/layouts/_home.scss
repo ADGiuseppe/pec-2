@@ -13,41 +13,7 @@ body {
   line-height: 24px;
   background-color: $uoc-bg;
   color: $uoc-corporate;
-}
-
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-container__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
-}
-
-.uoc-container__title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+  min-height: 100vh;
 }
 
 footer {
@@ -63,24 +29,18 @@ body {
   padding: 0;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 main {
   flex: 1 0 auto;
 }
 
 @supports (display: grid) {
-  .landing-page {
+  .landing {
     display: grid;
     place-items: center;
     min-height: 80vh;
   }
 
-  .landing-page__content {
+  .landing__content {
     display: grid;
     gap: 2rem;
     justify-items: center;
@@ -88,7 +48,7 @@ main {
 }
 
 @supports not (display: grid) {
-  .landing-page {
+  .landing {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,16 +57,16 @@ main {
     text-align: center;
   }
 
-  .landing-page__content {
+  .landing__content {
     display: block;
     width: 100%;
     text-align: center;
   }
 }
 
-.landing-page__image,
-.landing-page__title,
-.landing-page__description {
+.landing__image,
+.landing__title,
+.landing__description {
   display: block;
   width: 100%;
   text-align: center;
