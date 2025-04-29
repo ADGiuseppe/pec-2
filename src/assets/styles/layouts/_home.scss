@@ -54,6 +54,24 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.uoc-footer {
+  flex-shrink: 0;
 }
 
 @supports (display: grid) {
