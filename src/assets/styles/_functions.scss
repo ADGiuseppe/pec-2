@@ -1,0 +1,7 @@
+@function color-contrast($color) {
+  @if (lightness($color) > 50) {
+    @return $uoc-corporate;
+  } @else {
+    @return $uoc-masterbrand;
+  }
+}

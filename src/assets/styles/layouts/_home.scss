@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   background-color: $uoc-bg;
-  color: $uoc-corporate;
+  color: color-contrast($uoc-masterbrand);
   min-height: 100vh;
 }
 
