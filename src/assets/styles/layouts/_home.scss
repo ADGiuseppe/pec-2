@@ -71,3 +71,17 @@ main {
   width: 100%;
   text-align: center;
 }
+
+.landing__content {
+  container-type: inline-size;
+}
+
+@container (min-width: 500px) {
+  .landing__title {
+    font-size: 3rem;
+    color: #3a6db7;
+  }
+  .landing__description {
+    font-size: 1.5rem;
+  }
+}

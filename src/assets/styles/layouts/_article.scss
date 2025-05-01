@@ -43,6 +43,14 @@
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
+
+      // Added container query for inline-size containment
+      container-type: inline-size;
+
+      // Container query for responsive adjustments
+      @container (min-width: 700px) {
+        padding: 2rem 0.5rem 0;
+      }
     }
 
     &__columns {
@@ -50,6 +58,12 @@
       gap: 2rem;
       align-items: flex-start;
       margin-bottom: 1.5rem;
+
+      // Container query for columns layout adjustment
+      @container (min-width: 700px) {
+        flex-direction: row;
+        gap: 3rem;
+      }
 
       &-blockquote {
         flex: 1 1 40%;
@@ -61,6 +75,11 @@
         font-style: italic;
         border-radius: 0.5rem;
         margin: 0;
+
+        // Increased font size for blockquote in container query
+        @container (min-width: 700px) {
+          font-size: 1.3rem;
+        }
       }
 
       &-text {

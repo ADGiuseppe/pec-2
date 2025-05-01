@@ -19,6 +19,7 @@
     gap: 2rem;
     justify-content: center;
     margin-bottom: 2rem;
+    container-type: inline-size;
   }
 
   &__block {
@@ -54,5 +55,16 @@
     font-size: 1rem;
     color: #444;
     margin: 0 0 0.5rem;
+  }
+}
+
+@container (max-width: 700px) {
+  .speakers__flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .speakers__block {
+    max-width: 100%;
+    min-width: 0;
   }
 }
