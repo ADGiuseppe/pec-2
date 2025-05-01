@@ -175,4 +175,14 @@
       align-items: stretch;
     }
   }
+
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+  }
 }

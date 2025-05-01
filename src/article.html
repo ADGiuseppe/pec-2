@@ -26,7 +26,7 @@
               <button
                 type="button"
                 class="btn btn-primary mt-2"
-                onclick="navigator.clipboard.writeText(document.getElementById('quote-1').innerText)">
+                onclick="copyQuote('quote-1')">
                 Copy Quote
               </button>
             </div>
@@ -64,7 +64,7 @@
               <button
                 type="button"
                 class="btn btn-primary mt-2"
-                onclick="navigator.clipboard.writeText(document.getElementById('quote-2').innerText)">
+                onclick="copyQuote('quote-2')">
                 Copy Quote
               </button>
             </div>
@@ -88,7 +88,7 @@
               <button
                 type="button"
                 class="btn btn-primary mt-2"
-                onclick="navigator.clipboard.writeText(document.getElementById('main-quote').innerText)">
+                onclick="copyQuote('main-quote')">
                 Copy Quote
               </button>
             </div>
@@ -101,6 +101,17 @@
         </div>
       </section>
     </main>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="quoteCopiedModal" tabindex="-1" aria-labelledby="quoteCopiedModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <strong>Quote copied</strong>
+          </div>
+        </div>
+      </div>
+    </div>
     <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
