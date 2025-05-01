@@ -1,3 +1,4 @@
+// Returns a contrasting color (either $uoc-corporate or $uoc-masterbrand) based on the lightness of the input color.
 @function color-contrast($color) {
   @if (lightness($color) > 50) {
     @return $uoc-corporate;

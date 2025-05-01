@@ -1,10 +1,16 @@
+// Import Sass color module
 @use "sass:color";
 
+// Font families
 $font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
   "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
+
+// Brand colors
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+// Breakpoints
 $mq-min-width: 420px;

@@ -1,3 +1,5 @@
+// Article page layout styles
+
 @layer base {
   .article {
     &__main {
@@ -120,6 +122,7 @@
       font-size: 1.05rem;
     }
 
+    // Responsive adjustments
     @media (width <= 900px) {
       &__content {
         padding: 2rem 0.5rem 0;
@@ -131,6 +134,7 @@
       }
     }
 
+    // Functional pseudo-classes for advanced targeting
     &__content :where(ol, ul) {
       background: none;
       border-radius: 0;

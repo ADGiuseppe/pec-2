@@ -3,15 +3,11 @@
  * Do not include SCSS code in this file.
  */
 
-/**
- * Import variables
- */
-
+/* Import variables */
 @import "variables";
 @import "functions";
 
-/**
- * Import npm dependencies
+/* Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
@@ -19,19 +15,15 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
-/**
- * Import layouts
+/* Import layouts
  * It's a best practice to use a different partial for each page
  */
-
 @import "layouts/general";
 @import "layouts/home";
 @import "layouts/header";
 @import "layouts/footer";
-@import 'layouts/speakers';
-@import 'layouts/article';
+@import "layouts/speakers";
+@import "layouts/article";
 
-/**
- * Do NOT include anything else in this file!
- */
+/* Do NOT include anything else in this file! */
 
