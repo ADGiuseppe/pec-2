@@ -13,3 +13,13 @@ window.copyQuote = function(id) {
     }, 1200);
   });
 };
+
+      // Show toast on successful form submission
+      document.getElementById('signupForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const toastEl = document.getElementById('signupToast');
+        const toast = new bootstrap.Toast(toastEl);
+        toast.show();
+        // Optionally reset the form
+        e.target.reset();
+      });

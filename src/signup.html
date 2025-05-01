@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign Up | UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="signup__main" style="min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+      <section class="signup__section" style="background: #eaf3fc; border-radius: 1rem; padding: 2.5rem 2rem; max-width: 400px; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <h1 class="signup__title" style="text-align:center; color:#3a6db7; margin-bottom: 2rem;">Sign Up for the Event</h1>
+        <form id="signupForm">
+          <div class="mb-3">
+            <label for="signupName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="signupName" placeholder="Enter your first name" required>
+          </div>
+          <div class="mb-3">
+            <label for="signupLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="signupLastName" placeholder="Enter your last name" required>
+          </div>
+          <div class="mb-3">
+            <label for="signupEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-3">Sign Up</button>
+        </form>
+      </section>
+      <!-- Bootstrap Toast: centered at the bottom -->
+      <div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 1055">
+        <div id="signupToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              Sign up successful. Thank you for showing interest in our event!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
