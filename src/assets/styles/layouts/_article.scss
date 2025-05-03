@@ -16,6 +16,16 @@
       border-radius: 0 0 0.5rem 0.5rem;
       margin-bottom: 2rem;
 
+      background-image: url('../images/article_head_img.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
       &-icon {
         color: #3a6db7;
         margin-bottom: 1.5rem;
@@ -43,8 +53,6 @@
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
-
-      // Added container query for inline-size containment
       container-type: inline-size;
 
       // Container query for responsive adjustments
@@ -116,14 +124,21 @@
     }
 
     &__img-block {
-      background: #eaf3fc;
+      background: none;
       border-radius: 0.5rem;
       text-align: center;
       padding: 3rem 0;
       margin: 2rem 0;
+      overflow: hidden;
 
-      &-icon {
-        color: #3a6db7;
+      &-image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        margin: 0 auto;
       }
     }
 
@@ -139,6 +154,28 @@
       color: #3a6db7;
       opacity: 0.7;
       font-size: 1.05rem;
+    }
+
+    &__bibliography {
+      max-width: 900px;
+      margin: 3rem auto 2rem;
+      padding: 2rem 1rem;
+      background: #fff;
+      border-radius: 0.5rem;
+    }
+
+    &__bibliography-title {
+      color: #3a6db7 !important;
+    }
+
+    &__bibliography ul {
+      list-style: disc inside;
+      color: #3a6db7;
+      font-size: 1.05rem;
+    }
+
+    &__list-title {
+      margin-top: 2rem;
     }
 
     // Responsive adjustments
