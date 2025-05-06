@@ -19,3 +19,22 @@ header nav ul {
   margin: 0;
   padding: 0;
 }
+
+.site-logo {
+  max-height: 10rem;
+  width: auto;
+  display: block;
+}
+
+
+/* Responsive adjustment (optional, for very small screens) */
+@media (max-width: 500px) {
+  .site-logo {
+    max-height: 6rem;
+  }
+}
+
+header nav ul {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

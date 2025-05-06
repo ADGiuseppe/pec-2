@@ -1,5 +1,12 @@
+.signup__main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .signup__section {
-  background: #eaf3fc;
+  background: $secondary;
   border-radius: 1rem;
   padding: 2.5rem 2rem;
   max-width: 400px;
@@ -10,7 +17,7 @@
 
 .signup__title {
   text-align: center;
-  color: #3a6db7;
+  color: $primary;
   margin-bottom: 2rem;
   font-size: 2rem;
 }

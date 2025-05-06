@@ -57,3 +57,17 @@
   height: 24px;
   display: block;
 }
+
+.site-logo {
+  max-height: 7rem;
+  width: auto;
+  display: block;
+}
+
+
+/* Responsive adjustment (optional, for very small screens) */
+@media (max-width: 500px) {
+  .site-logo {
+    max-height: 4rem;
+  }
+}

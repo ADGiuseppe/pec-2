@@ -1,11 +1,9 @@
-// Article page layout styles
-
 @layer base {
   .article {
     &__main {
       font-family: $font-family-sans-serif;
       color:$primary;
-      background: $secondary;
+      background: $primary-light;
       min-height: 100vh;
     }
 
@@ -15,16 +13,25 @@
       padding: 4rem 1rem 3rem;
       border-radius: 0 0 0.5rem 0.5rem;
       margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
 
-      background-image: url('../images/article_head_img.jpg');
-      background-size: cover;
-      background-position: center;
-      min-height: 260px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/article_head_img.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.45; 
+        z-index: 0;
+      }
+
+    
+      > * {
+        position: relative;
+        z-index: 1;
+      }
 
       &-icon {
         color:$primary;
@@ -54,8 +61,10 @@
       flex-direction: column;
       gap: 2.5rem;
       container-type: inline-size;
+      background: $secondary; // Added background color
+      border-radius: 1rem; // Add this line to round the corners
 
-      // Container query for responsive adjustments
+    
       @container (min-width: 700px) {
         padding: 2rem 0.5rem 0;
       }
@@ -67,7 +76,7 @@
       align-items: flex-start;
       margin-bottom: 1.5rem;
 
-      // Container query for columns layout adjustment
+    
       @container (min-width: 700px) {
         flex-direction: row;
         gap: 3rem;
@@ -154,17 +163,38 @@
       max-width: 900px;
       margin: 3rem auto 2rem;
       padding: 2rem 1rem;
-      background: #fff;
+      background: $secondary;
       border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+
+      &-title {
+        color: $primary;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      ul {
+        list-style: disc inside;
+        color: $primary;
+        font-size: 1.05rem;
+
+        a {
+          color: $tertiery;
+          text-decoration: underline;
+          &:hover {
+            color: $accent;
+          }
+        }
+      }
     }
 
     &__bibliography-title {
-      color: #3a6db7 !important;
+      color: $primary;
     }
 
     &__bibliography ul {
       list-style: disc inside;
-      color: #3a6db7;
+      color: $primary;
       font-size: 1.05rem;
     }
 
