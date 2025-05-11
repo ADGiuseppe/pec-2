@@ -33,6 +33,108 @@ main {
   flex: 1 0 auto;
 }
 
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+}
+
+.landing__poster {
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  background: $secondary;
+  border-radius: 2rem; 
+  box-sizing: border-box;
+  width: 95vw;
+  min-height: 92vh;
+  margin: 1vh auto;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  justify-items: center;
+  align-items: start;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+
+.landing__logo {
+  max-width: 220px;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.1rem; // Less space below logo
+}
+
+.landing__presented {
+  font-size: 2.1rem;
+  color: $primary;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.2rem;
+}
+
+.landing__title {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: $primary;
+  text-align: center;
+  margin: 0.3rem 0 0.5rem 0;
+  letter-spacing: 0.03em;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.landing__date {
+  font-size: 3.2rem;
+  color: $primary;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.landing__illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1.2rem 0 0.7rem 0;
+  border-radius: 0.7rem;
+  display: block;
+  object-fit: cover;
+}
+
+.landing__location {
+  font-size: 3.2rem;
+  color: $primary;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .landing__poster {
+    max-width: 99vw;
+    width: 99vw;
+    border-width: 1.2rem;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    gap: 0.5rem;
+  }
+  .landing__logo {
+    max-width: 120px;
+  }
+  .landing__title {
+    font-size: 2rem;
+  }
+  .landing__date,
+  .landing__location {
+    font-size: 1.3rem;
+  }
+  .landing__presented {
+    font-size: 1.2rem;
+  }
+}
+
 @supports (display: grid) {
   .landing {
     display: grid;
@@ -44,6 +146,23 @@ main {
     display: grid;
     gap: 2rem;
     justify-items: center;
+  }
+
+  .landing__poster {
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    background: $secondary;
+    border-radius: 2rem; 
+    box-sizing: border-box;
+    width: 95vw;
+    min-height: 92vh;
+    margin: 1vh auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    justify-items: center;
+    align-items: start;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
   }
 }
 
@@ -61,6 +180,20 @@ main {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .landing__poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $secondary;
+    border-radius: 2rem; 
+    box-sizing: border-box;
+    width: 95vw;
+    min-height: 92vh;
+    margin: 1vh auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
   }
 }
 

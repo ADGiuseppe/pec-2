@@ -63,6 +63,8 @@
       container-type: inline-size;
       background: $secondary; // Added background color
       border-radius: 1rem; // Add this line to round the corners
+      font-size: 1rem; // Reduced from 1.18rem
+      line-height: 1.6;
 
     
       @container (min-width: 700px) {
@@ -101,6 +103,8 @@
 
       &-text {
         flex: 2 1 60%;
+        font-size: 1rem; // Reduced from 1.18rem
+        line-height: 1.6;
 
         p {
           margin: 0;
@@ -142,6 +146,15 @@
 
       &-icon {
         color:$primary;
+      }
+
+      img {
+        max-width: 450px; 
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 0.5rem;
       }
     }
 
@@ -228,6 +241,25 @@
 
     &__content :is(h2, h3, h4) {
       color:$primary;
+    }
+
+    &__content h1,
+    &__content h2,
+    &__content h3 {
+      font-family: 'Roboto Slab', serif;
+      text-align: center;
+    }
+
+    &__content {
+      font-size: 1.18rem; // Increase main text size
+      line-height: 1.7;
+    }
+
+    &__text-section,
+    &__columns-text,
+    &__list {
+      font-size: 1.18rem; // Ensure larger font for all main text areas
+      line-height: 1.7;
     }
   }
 }
