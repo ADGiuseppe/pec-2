@@ -1,15 +1,15 @@
 .signup__main {
-  min-height: 100svh; // Use small viewport height for better mobile support
+  min-height: 100svh; 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4dvh 2dvw; // Add some dynamic viewport padding
+  padding: 4dvh 2dvw; 
 }
 
 .signup__section {
-  background: color(display-p3 0.95 0.91 0.81); // $secondary as display-p3
+  background: color(display-p3 0.95 0.91 0.81); 
   border-radius: 1rem;
-  padding: 4svh 3svw; // Responsive padding
+  padding: 4svh 3svw; 
   max-width: 600px;
   width: 100%;
   box-shadow: 0 2px 8px color-mix(in srgb, black 6%, transparent);
@@ -18,7 +18,7 @@
 
 .signup__title {
   text-align: center;
-  color: color(display-p3 0.22 0.4 0.25); // $primary as display-p3
+  color: color(display-p3 0.22 0.4 0.25); 
   margin-bottom: 3svh;
   font-size: 2.5svw;
   line-height: 1.1;
@@ -29,7 +29,7 @@
   margin-bottom: 1svh;
 }
 
-.signup__section .form-control {
+.signup__section .signup__form-control {
   font-size: 1.15rem;
   padding: 1svh 1.5svw;
   min-height: 3svh;
@@ -42,21 +42,23 @@
 .signup__section .btn {
   font-size: 1.2rem;
   padding: 1svh 0;
-  background: color(display-p3 0.66 0.79 0.34); // $accent as display-p3
-  color: color(display-p3 0.22 0.4 0.25); // $primary as display-p3
+  background: color(display-p3 0.66 0.79 0.34); 
+  color: color(display-p3 0.22 0.4 0.25); 
   border: none;
 }
 
-/* Container query: make fields larger and more readable when the form is narrow */
+
 @container (max-width: 350px) {
   .form-label {
     font-size: 1rem;
   }
-  .form-control {
+
+  .signup__form-control {
     font-size: 1rem;
     padding: 0.6svh 0.7svw;
     min-height: 2.5svh;
   }
+
   .btn {
     font-size: 1rem;
     padding: 0.6svh 0;

@@ -1,5 +1,3 @@
-// Footer layout styles
-
 .footer {
   background: $secondary;
   padding: 1.5rem 0;
@@ -65,8 +63,7 @@
 }
 
 
-/* Responsive adjustment (optional, for very small screens) */
-@media (max-width: 500px) {
+@media (width <= 500px) {
   .site-logo {
     max-height: 4rem;
   }

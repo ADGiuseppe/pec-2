@@ -1,13 +1,9 @@
-// Import Sass color module
 @use "sass:color";
 
-// Font families
 $font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
   "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
-
-
 $primary: #386641;
 $primary-light: #829e72a5;
 $secondary: #f2e8cf;
