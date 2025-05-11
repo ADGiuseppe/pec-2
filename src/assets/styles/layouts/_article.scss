@@ -66,7 +66,6 @@
       font-size: 1rem; 
       line-height: 1.6;
 
-    
       @container (min-width: 700px) {
         padding: 2rem 0.5rem 0;
       }
@@ -202,16 +201,6 @@
       }
     }
 
-    &__bibliography-title {
-      color: $primary;
-    }
-
-    &__bibliography ul {
-      list-style: disc inside;
-      color: $primary;
-      font-size: 1.05rem;
-    }
-
     &__list-title {
       margin-top: 2rem;
     }
@@ -249,11 +238,6 @@
     &__content h3 {
       font-family: 'Roboto Slab', serif;
       text-align: center;
-    }
-
-    &__content {
-      font-size: 1.18rem; 
-      line-height: 1.7;
     }
 
     &__text-section,
