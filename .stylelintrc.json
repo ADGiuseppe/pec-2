@@ -6,16 +6,12 @@
     "stylelint-scss"
   ],
   "rules": {
-    "indentation": 2,
-    "color-hex-case": "lower",
-    "color-hex-length": "short",
-    "string-quotes": "double",
-    "selector-class-pattern": "^[a-z0-9\\-\\_]+$",
+    "max-nesting-depth": 4,
+    "selector-class-pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:__(?:[a-z0-9]+(?:-[a-z0-9]+)*))?(?:--(?:[a-z0-9]+(?:-[a-z0-9]+)*))?$",
     "block-no-empty": true,
-    "declaration-block-trailing-semicolon": "always",
-    "max-nesting-depth": 3,
-    "scss/at-import-partial-extension-blacklist": ["scss"],
-    "scss/dollar-variable-pattern": "^\\$[a-z0-9\\-]+$",
+    "color-hex-length": "short",
+    "color-function-notation": "modern",
+    "scss/at-import-partial-extension-disallowed-list": ["scss"],
     "scss/percent-placeholder-pattern": "^%[a-z0-9\\-]+$"
-  }
+    }
 }

@@ -38,6 +38,9 @@
 .footer__logo {
   font-weight: bold;
   font-size: 1.2em;
+  max-height: 7rem;
+  width: auto;
+  display: block;
 }
 
 .footer__center {
@@ -56,15 +59,10 @@
   display: block;
 }
 
-.site-logo {
-  max-height: 7rem;
-  width: auto;
-  display: block;
-}
 
 
 @media (width <= 500px) {
-  .site-logo {
+  .footer__logo {
     max-height: 4rem;
   }
 }

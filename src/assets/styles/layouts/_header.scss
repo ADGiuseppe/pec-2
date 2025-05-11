@@ -20,7 +20,7 @@ header nav ul {
   font-weight: 700;
 }
 
-.site-logo {
+.header__logo {
   max-height: 10rem;
   width: auto;
   display: block;
@@ -29,7 +29,7 @@ header nav ul {
 
 
 @media (width <= 500px) {
-  .site-logo {
+  .header__logo {
     max-height: 6rem;
   }
 }
